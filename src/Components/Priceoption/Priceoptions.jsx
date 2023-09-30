@@ -67,13 +67,18 @@ const Priceoptions = () => {
         }
       ]
       
-    return (
+    return ( 
+               
         <div>
-            <h3 className="text-3xl">display data price options</h3>
-            {
-             Priceoption.map(option=><Priceop key={option.id} option={option} ></Priceop>)   
-            }
+           <h3 className="text-3xl">display data price options</h3>
+          <div className="grid md:grid-cols-3 gap-3 p-6 text-center m-4">
+           
+           {
+            Priceoption.map(option=><Priceop key={option.id} option={option} ></Priceop>)   
+           }
+       </div>
         </div>
+       
     );
 };
 

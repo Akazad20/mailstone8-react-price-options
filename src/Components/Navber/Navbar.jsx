@@ -13,7 +13,7 @@ const Navbar = () => {
       ];
 
     return (
-        <nav className='text-black p-6 m-3'>
+        <nav className='text-black first: p-6 m-3'>
            <div onClick={()=>setOpen(!open)} className='md:hidden text-3xl'>
             {
                 open===true? <AiOutlineClose></AiOutlineClose>:<AiOutlineMenu></AiOutlineMenu>
